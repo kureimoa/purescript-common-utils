@@ -1,6 +1,3 @@
 module CommonUtils.Handlebars where
 
-import Text.Handlebars (compile)
-
-mkCompilerWithVariables :: forall a. a -> String -> String
-mkCompilerWithVariables variables template = compile template variables
+foreign import compile :: forall a. String -> a -> String
