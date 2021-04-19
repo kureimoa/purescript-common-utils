@@ -9,9 +9,9 @@ Add this to your `packages.dhall`
 ```dhall
 let upstream = ...
 in upstream with common-utils = {
-  dependencies = [ "effect", "handlebars", "node-args", "node-fs", "prelude" ],
+  dependencies = [ "effect", "node-fs", "prelude", "node-process" ],
   repo = "https://github.com/rajatsharma/purescript-common-utils.git",
-  version = <<latest commit hash>>
+  version = <<Latest commit hash>>
 }
 ```
 
