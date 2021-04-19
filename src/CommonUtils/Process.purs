@@ -1,4 +1,4 @@
-module Genops.Node.Process where
+module CommonUtils.Node.Process where
 
 import Prelude
 import Data.Array (drop, (!!))

@@ -1,4 +1,4 @@
-module Genops.Node.FileOps where
+module CommonUtils.Node.FileOps where
 
 import Prelude
 import Node.FS.Sync as S

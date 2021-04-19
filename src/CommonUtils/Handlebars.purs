@@ -1,4 +1,4 @@
-module Genops.Handlebars where
+module CommonUtils.Handlebars where
 
 import Text.Handlebars (compile)
 

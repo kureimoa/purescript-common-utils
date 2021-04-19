@@ -1,6 +1,6 @@
-# Purescript Genops
+# Purescript Common Utils
 
-> Purescript module with utility functions for code generation
+> Purescript FFI for my commonly used npm modules and Node api
 
 ## Installation
 
@@ -8,9 +8,9 @@ Add this to your `packages.dhall`
 
 ```dhall
 let upstream = ...
-in upstream with genops = {
+in upstream with common-utils = {
   dependencies = [ "effect", "handlebars", "node-args", "node-fs", "prelude" ],
-  repo = "https://github.com/rajatsharma/purescript-genops.git",
+  repo = "https://github.com/rajatsharma/purescript-common-utils.git",
   version = <<latest commit hash>>
 }
 ```
@@ -18,7 +18,7 @@ in upstream with genops = {
 Run
 
 ```sh
-$ spago install genops
+$ spago install common-utils
 $ yarn add handlebars fs-extra replace-in-file pluralize snake-case pascal-case constant-case
 ```
 
@@ -30,7 +30,7 @@ $ yarn add handlebars fs-extra replace-in-file pluralize snake-case pascal-case 
 
 
 ```haskell
-import Genops.Handlebars (mkCompilerWithVariables)
+import CommonUtils.Handlebars (mkCompilerWithVariables)
 
 comileHandlebarsTemplate :: Effect String
 comileHandlebarsTemplate = do
@@ -42,7 +42,7 @@ comileHandlebarsTemplate = do
 - Create File path:
 
 ```haskell
-import Genops.Node.FileOps (mkPath)
+import CommonUtils.Node.FileOps (mkPath)
 
 mainDirPath :: Path.FilePath
 mainDirPath = mkPath [ "src", "main", "scala" ]
@@ -51,7 +51,7 @@ mainDirPath = mkPath [ "src", "main", "scala" ]
 - Copy directory with contents:
 
 ```haskell
-import Genops.Node.FileOps (copyDir)
+import CommonUtils.Node.FileOps (copyDir)
 
 copyDirectoryWithContents :: Effect Unit
 copyDirectoryWithContents = copyDir (mkPath [ "src" ]) (mkPath [ "test" ])
@@ -60,7 +60,7 @@ copyDirectoryWithContents = copyDir (mkPath [ "src" ]) (mkPath [ "test" ])
 - Replace text in file:
 
 ```haskell
-import Genops.Node.FileOps (copyDir)
+import CommonUtils.Node.FileOps (copyDir)
 
 replaceInFile :: Effect Unit
 replaceInFile = replace { files: "src/index.js", from: ";", to: "" }

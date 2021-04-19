@@ -1,4 +1,4 @@
-module Genops.Inflections where
+module CommonUtils.Inflections where
 
 foreign import plural :: String -> String
 foreign import snakeCase :: String -> String
