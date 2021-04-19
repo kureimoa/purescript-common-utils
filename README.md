@@ -32,8 +32,9 @@ $ yarn add handlebars fs-extra replace-in-file pluralize snake-case pascal-case 
 ```haskell
 import Genops.Handlebars (mkCompilerWithVariables)
 
-comileHandlebarsTemplate :: String
-comileHandlebarsTemplate = mkCompilerWithVariables { name: "World" } "Hello, {{name}}!" // "Hello, World"
+comileHandlebarsTemplate :: Effect String
+comileHandlebarsTemplate = do
+  pure mkCompilerWithVariables { name: "World" } "Hello, {{name}}!" -- "Hello, World"
 ```
 
 ### File Operations
@@ -58,7 +59,7 @@ copyDirectoryWithContents = copyDir (mkPath [ "src" ]) (mkPath [ "test" ])
 
 - Replace text in file:
 
-```
+```haskell
 import Genops.Node.FileOps (copyDir)
 
 replaceInFile :: Effect Unit
