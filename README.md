@@ -1,6 +1,6 @@
 # Puresciprt Genops
 
-> Purescript module with utility functions for file generation
+> Purescript module with utility functions for code generation
 
 ## Installation
 
