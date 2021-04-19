@@ -1,4 +1,4 @@
-# Puresciprt Genops
+# Purescript Genops
 
 > Purescript module with utility functions for code generation
 
