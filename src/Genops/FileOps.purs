@@ -17,4 +17,3 @@ writeTextFileSync = S.writeTextFile Encoding.UTF8
 
 readTextFileSync :: String -> Effect String
 readTextFileSync = S.readTextFile Encoding.UTF8
-
