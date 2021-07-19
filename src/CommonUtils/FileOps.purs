@@ -22,3 +22,7 @@ writeTextFileSync = S.writeTextFile Encoding.UTF8
 
 readTextFileSync :: String -> Effect String
 readTextFileSync = S.readTextFile Encoding.UTF8
+
+foreign import addListener :: forall a. a -> String -> (String -> Effect Unit) -> Effect Unit
+
+foreign import createWatcher :: forall a. String -> Effect a
