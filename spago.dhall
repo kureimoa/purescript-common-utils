@@ -1,9 +1,15 @@
-{-
-Welcome to a Spago project!
-You can edit this file as you like.
--}
 { name = "common-utils"
-, dependencies = [ "easy-ffi", "effect", "node-fs", "node-process", "prelude" ]
+, dependencies =
+  [ "arrays"
+  , "easy-ffi"
+  , "effect"
+  , "lists"
+  , "node-buffer"
+  , "node-fs"
+  , "node-path"
+  , "node-process"
+  , "prelude"
+  ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 }
