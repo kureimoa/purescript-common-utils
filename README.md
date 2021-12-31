@@ -4,22 +4,8 @@
 
 ## Installation
 
-Add this to your `packages.dhall`
-
-```dhall
-let upstream = ...
-in upstream with common-utils = {
-  dependencies = [ "effect", "node-fs", "prelude", "node-process" ],
-  repo = "https://github.com/rajatsharma/purescript-common-utils.git",
-  version = <<Latest commit hash>>
-}
-```
-
-Run
-
 ```sh
-$ spago install common-utils
-$ yarn add handlebars fs-extra replace-in-file pluralize snake-case pascal-case constant-case
+$ yarn add https://github.com/kureimoa/purescript-common-utils
 ```
 
 ## Usage
