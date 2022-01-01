@@ -5,8 +5,8 @@
   "repository": "https://github.com/kureimoa/purescript-common-utils",
   "author": "Rajat Sharma <lunasunkaiser@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "prepare": "sh ./install.sh"
+  "bin": {
+    "pcu-init": "./install.sh"
   },
   "dependencies": {
     "constant-case": "^3.0.4",

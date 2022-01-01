@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 hash=`git ls-remote https://github.com/kureimoa/purescript-common-utils.git | grep refs/heads/master | cut -f 1`
 deps=`dhall-to-json <<< "let contents = ./spago.dhall in contents.dependencies"`
 package='with common-utils = {
