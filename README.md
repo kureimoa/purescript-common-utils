@@ -6,6 +6,7 @@
 
 ```sh
 $ yarn add https://github.com/kureimoa/purescript-common-utils
+$ npx pcu-init
 ```
 
 ## Usage
