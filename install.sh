@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 hash=`git ls-remote https://github.com/rajatsharma/primordials.git | grep refs/heads/master | cut -f 1`
 deps=`dhall-to-json <<< "let contents = ./node_modules/primordials/spago.dhall in contents.dependencies"`
-package='with common-utils = {
+package='with primordials = {
   dependencies = dependencies-array,
   repo = "https://github.com/rajatsharma/primordials.git",
   version = "version-hash"
