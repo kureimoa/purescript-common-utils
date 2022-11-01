@@ -1,4 +1,4 @@
-{ name = "common-utils"
+{ name = "purescript-primordials"
 , dependencies =
   [ "arrays"
   , "effect"

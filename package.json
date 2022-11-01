@@ -2,9 +2,9 @@
   "name": "primordials",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/kureimoa/purescript-common-utils",
+  "repository": "https://github.com/rajatsharma/primordials.git",
   "author": "Rajat Sharma <lunasunkaiser@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bin": {
     "primordial-link": "./install.sh"
   },

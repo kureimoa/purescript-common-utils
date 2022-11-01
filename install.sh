@@ -1,15 +1,15 @@
 #!/usr/bin/env sh
-hash=`git ls-remote https://github.com/kureimoa/purescript-common-utils.git | grep refs/heads/master | cut -f 1`
-deps=`dhall-to-json <<< "let contents = ./node_modules/purescript-common-utils/spago.dhall in contents.dependencies"`
+hash=`git ls-remote https://github.com/rajatsharma/primordials.git | grep refs/heads/master | cut -f 1`
+deps=`dhall-to-json <<< "let contents = ./node_modules/primordials/spago.dhall in contents.dependencies"`
 package='with common-utils = {
   dependencies = dependencies-array,
-  repo = "https://github.com/kureimoa/purescript-common-utils.git",
+  repo = "https://github.com/rajatsharma/primordials.git",
   version = "version-hash"
 }'
 base=`basename "$PWD"`
 
-if [ "$base" != "purescript-common-utils" ]
+if [ "$base" != "primordials" ]
 then
   echo $package | perl -pE "s/dependencies-array/$deps/;s/version-hash/$hash/;" >> $PWD/packages.dhall
-  spago install common-utils
+  spago install primordials
 fi
