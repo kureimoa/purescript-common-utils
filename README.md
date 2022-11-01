@@ -17,7 +17,7 @@ $ npx primordial-link
 
 
 ```haskell
-import CommonUtils.Handlebars (mkCompilerWithVariables)
+import Primordials.Handlebars (mkCompilerWithVariables)
 
 comileHandlebarsTemplate :: Effect String
 comileHandlebarsTemplate = do
@@ -29,7 +29,7 @@ comileHandlebarsTemplate = do
 - Create File path:
 
 ```haskell
-import CommonUtils.Node.FileOps (mkPath)
+import Primordials.Node.FileOps (mkPath)
 
 mainDirPath :: Path.FilePath
 mainDirPath = mkPath [ "src", "main", "scala" ]
@@ -38,7 +38,7 @@ mainDirPath = mkPath [ "src", "main", "scala" ]
 - Copy directory with contents:
 
 ```haskell
-import CommonUtils.Node.FileOps (copyDir)
+import Primordials.Node.FileOps (copyDir)
 
 copyDirectoryWithContents :: Effect Unit
 copyDirectoryWithContents = copyDir (mkPath [ "src" ]) (mkPath [ "test" ])
@@ -47,7 +47,7 @@ copyDirectoryWithContents = copyDir (mkPath [ "src" ]) (mkPath [ "test" ])
 - Replace text in file:
 
 ```haskell
-import CommonUtils.Node.FileOps (copyDir)
+import Primordials.Node.FileOps (copyDir)
 
 replaceInFile :: Effect Unit
 replaceInFile = replace { files: "src/index.js", from: ";", to: "" }
