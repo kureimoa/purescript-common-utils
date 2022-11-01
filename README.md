@@ -1,4 +1,4 @@
-# Primordial 🐍
+# Primordials 🐍
 
 > My Purescript Prelude
 
