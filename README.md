@@ -1,12 +1,12 @@
-# Purescript Common Utils
+# Primordial 🐍
 
-> Purescript FFI for my commonly used npm modules and Node api
+> My Purescript Prelude
 
 ## Installation
 
 ```sh
-$ yarn add https://github.com/kureimoa/purescript-common-utils
-$ npx pcu-init
+$ pnpm i ssh://git@github.com:rajatsharma/primordials.git
+$ npx primordial-link
 ```
 
 ## Usage

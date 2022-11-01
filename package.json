@@ -1,12 +1,12 @@
 {
-  "name": "purescript-common-utils",
+  "name": "primordials",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/kureimoa/purescript-common-utils",
   "author": "Rajat Sharma <lunasunkaiser@gmail.com>",
   "license": "MIT",
   "bin": {
-    "pcu-init": "./install.sh"
+    "primordial-link": "./install.sh"
   },
   "dependencies": {
     "constant-case": "^3.0.4",

@@ -1,7 +1,6 @@
 { name = "common-utils"
 , dependencies =
   [ "arrays"
-  , "easy-ffi"
   , "effect"
   , "lists"
   , "node-buffer"
