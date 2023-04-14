@@ -6,7 +6,7 @@
 
 ```sh
 $ pnpm i ssh://git@github.com:rajatsharma/primordials.git
-$ npx primordial-link
+$ pnpx primordial-link
 ```
 
 ## Usage
